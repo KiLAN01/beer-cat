@@ -40,4 +40,6 @@ echo -e "${amarelo}[====================================]"
    echo -e "${amarelo}SocialSploit information"
    echo -e "${amarelo}[phishing]"
    echo -e "${amarelo}[====================================]"
-  echo -e  "${amarelo}"
+  echo -e  "${amarelo}installing..."
+  sleep 4
+    git clone https://github.com/Cesar-Hack-Gray/SocialSploit
