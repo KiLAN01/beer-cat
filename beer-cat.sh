@@ -10,12 +10,6 @@ roxo='\033[35m'
 ciano='\033[1;36m'
 magenta='\033[1;35m'
 
- echo -e "${vermelho}installing packages..."
- sleep 8
-apt install figlet -y
-  apt install git -y
-apt install python -y
-apt install python2 -y
 sleep 6
 figlet ${amarelo}beer cat
   echo -e "#${vermelho}responsible for the bad acts after installing the tool${vermelho}"
