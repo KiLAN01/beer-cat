@@ -1,11 +1,12 @@
 #!bin/bash
 amarelo='\033[33m'
+branco='\033[0;37m'
 
  echo -e "${amarelo}installing packages..."
- echo "if this question appears [y / n] type y and enter"
+ echo "${branco}if this question appears [y / n] type y and enter"
  sleep 8
 # installing apts
-${amarelo}
+echo -e "${amarelo}"
 apt install figlet -y
   apt install git -y
 apt install python -y
@@ -18,4 +19,4 @@ pkg install figlet -y
 pkg install git -y
 
 sleep 6
-echo -e "${amarelo}successfully installed"
+echo -e "${branco}successfully installed"
