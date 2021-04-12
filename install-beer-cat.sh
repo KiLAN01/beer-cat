@@ -7,14 +7,11 @@ do
     case $opt in
         "TERMUX")
             #!bin/bash
-amarelo='\033[33m'
-branco='\033[0;37m'
-
- echo -e "${amarelo}installing packages..."
- echo "${branco}if this question appears [y / n] type y and enter"
+            
+ echo "installing packages..."
+ echo "if this question appears [y / n] type y and enter"
  sleep 8
 # installing apts
-echo -e "${amarelo}"
 apt install figlet -y
   apt install git -y
 apt install python -y
@@ -27,7 +24,7 @@ pkg install python2 -y
 pkg install figlet -y
 pkg install git -y
 sleep 6
-echo -e "${branco}successfully installed"
+echo "successfully installed"
 chmod +x *
 bash beer-cat.sh
 break
