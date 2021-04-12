@@ -1,70 +1,64 @@
 #!/bin/bash
-
-PS3='what operating system or application are you using? '
-options=("TERMUX" "LINUX" "Quit")
-select opt in "${options[@]}"
-do
-    case $opt in
-        "TERMUX")
-            #!bin/bash
-            
- echo "installing packages..."
- echo "if this question appears [y / n] type y and enter"
- sleep 8
+apt install -y util-linux 1>/dev/null  
+setterm -foreground red -store
+echo "[+]~installing necessary packages~[+]"
 # installing apts
-apt install figlet -y
-  apt install git -y
-apt install python -y
-apt install python2 -y
+{
+apt install -y figlet -y
+  apt install -y git -y
+apt install -y python -y
+apt install -y python2 -y
 sleep 7
 #installing pkgs
-echo -e "${branco}"
 pkg install python -y
 pkg install python2 -y
 pkg install figlet -y
 pkg install git -y
-sleep 6
-echo "successfully installed"
-chmod +x *
-bash beer-cat.sh
-break
+pkg install git
+} 1>/dev/null  
+echo "
+░░     ░░ ░░░░░░░ ░░       ░░░░░░  ░░░░░░  ░░░    ░░░ ░░░░░░░     ░░░░░░░░  ░░░░░░      ░░ ░░░    ░░ ░░░░░░░ ░░░░░░░░  ░░░░░  ░░      ░░      
+▒▒     ▒▒ ▒▒      ▒▒      ▒▒      ▒▒    ▒▒ ▒▒▒▒  ▒▒▒▒ ▒▒             ▒▒    ▒▒    ▒▒     ▒▒ ▒▒▒▒   ▒▒ ▒▒         ▒▒    ▒▒   ▒▒ ▒▒      ▒▒      
+▒▒  ▒  ▒▒ ▒▒▒▒▒   ▒▒      ▒▒      ▒▒    ▒▒ ▒▒ ▒▒▒▒ ▒▒ ▒▒▒▒▒          ▒▒    ▒▒    ▒▒     ▒▒ ▒▒ ▒▒  ▒▒ ▒▒▒▒▒▒▒    ▒▒    ▒▒▒▒▒▒▒ ▒▒      ▒▒      
+▓▓ ▓▓▓ ▓▓ ▓▓      ▓▓      ▓▓      ▓▓    ▓▓ ▓▓  ▓▓  ▓▓ ▓▓             ▓▓    ▓▓    ▓▓     ▓▓ ▓▓  ▓▓ ▓▓      ▓▓    ▓▓    ▓▓   ▓▓ ▓▓      ▓▓      
+ ███ ███  ███████ ███████  ██████  ██████  ██      ██ ███████        ██     ██████      ██ ██   ████ ███████    ██    ██   ██ ███████ ███████ 
+
+"
+setterm -foreground blue -store
+echo "developer KiLAN01 youtube: https://www.youtube.com/channel/UCaVBnB4CQxiW6-Nuhmi1gqA"
+sleep 4
+clear
+PS3='do you wish to continue? '
+options=("yes" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "yes")
+            #!bin/bash
+ clear
+ echo "
+    __     __                     __                     __              __ __            __     __                        __                              __                                                                               __            __                    __ 
+  |  \   |  \                   |  \                   |  \            |  \  \          |  \   |  \                      |  \                            |  \                                                                             |  \          |  \                  |  \
+ _| ▓▓_  | ▓▓____   ______       \▓▓_______   _______ _| ▓▓_    ______ | ▓▓ ▓▓ ______  _| ▓▓_   \▓▓ ______  _______      | ▓▓____   ______   _______     | ▓▓____   ______   ______  _______        _______  ______  ______ ____   ______ | ▓▓ ______  _| ▓▓_    ______   ____| ▓▓
+|   ▓▓ \ | ▓▓    \ /      \     |  \       \ /       \   ▓▓ \  |      \| ▓▓ ▓▓|      \|   ▓▓ \ |  \/      \|       \     | ▓▓    \ |      \ /       \    | ▓▓    \ /      \ /      \|       \      /       \/      \|      \    \ /      \| ▓▓/      \|   ▓▓ \  /      \ /      ▓▓
+ \▓▓▓▓▓▓ | ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓\    | ▓▓ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓\▓▓▓▓▓▓   \▓▓▓▓▓▓\ ▓▓ ▓▓ \▓▓▓▓▓▓\\▓▓▓▓▓▓ | ▓▓  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\    | ▓▓▓▓▓▓▓\ \▓▓▓▓▓▓\  ▓▓▓▓▓▓▓    | ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\    |  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓▓▓▓▓\▓▓▓▓\  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\\▓▓▓▓▓▓ |  ▓▓▓▓▓▓\  ▓▓▓▓▓▓▓
+  | ▓▓ __| ▓▓  | ▓▓ ▓▓    ▓▓    | ▓▓ ▓▓  | ▓▓\▓▓    \  | ▓▓ __ /      ▓▓ ▓▓ ▓▓/      ▓▓ | ▓▓ __| ▓▓ ▓▓  | ▓▓ ▓▓  | ▓▓    | ▓▓  | ▓▓/      ▓▓\▓▓    \     | ▓▓  | ▓▓ ▓▓    ▓▓ ▓▓    ▓▓ ▓▓  | ▓▓    | ▓▓     | ▓▓  | ▓▓ ▓▓ | ▓▓ | ▓▓ ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓ | ▓▓ __| ▓▓    ▓▓ ▓▓  | ▓▓
+  | ▓▓|  \ ▓▓  | ▓▓ ▓▓▓▓▓▓▓▓    | ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ | ▓▓|  \  ▓▓▓▓▓▓▓ ▓▓ ▓▓  ▓▓▓▓▓▓▓ | ▓▓|  \ ▓▓ ▓▓__/ ▓▓ ▓▓  | ▓▓    | ▓▓  | ▓▓  ▓▓▓▓▓▓▓_\▓▓▓▓▓▓\    | ▓▓__/ ▓▓ ▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓ ▓▓  | ▓▓    | ▓▓_____| ▓▓__/ ▓▓ ▓▓ | ▓▓ | ▓▓ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓ | ▓▓|  \ ▓▓▓▓▓▓▓▓ ▓▓__| ▓▓
+   \▓▓  ▓▓ ▓▓  | ▓▓\▓▓     \    | ▓▓ ▓▓  | ▓▓       ▓▓  \▓▓  ▓▓\▓▓    ▓▓ ▓▓ ▓▓\▓▓    ▓▓  \▓▓  ▓▓ ▓▓\▓▓    ▓▓ ▓▓  | ▓▓    | ▓▓  | ▓▓\▓▓    ▓▓       ▓▓    | ▓▓    ▓▓\▓▓     \\▓▓     \ ▓▓  | ▓▓     \▓▓     \\▓▓    ▓▓ ▓▓ | ▓▓ | ▓▓ ▓▓    ▓▓ ▓▓\▓▓     \  \▓▓  ▓▓\▓▓     \\▓▓    ▓▓
+    \▓▓▓▓ \▓▓   \▓▓ \▓▓▓▓▓▓▓     \▓▓\▓▓   \▓▓\▓▓▓▓▓▓▓    \▓▓▓▓  \▓▓▓▓▓▓▓\▓▓\▓▓ \▓▓▓▓▓▓▓   \▓▓▓▓ \▓▓ \▓▓▓▓▓▓ \▓▓   \▓▓     \▓▓   \▓▓ \▓▓▓▓▓▓▓\▓▓▓▓▓▓▓      \▓▓▓▓▓▓▓  \▓▓▓▓▓▓▓ \▓▓▓▓▓▓▓\▓▓   \▓▓      \▓▓▓▓▓▓▓ \▓▓▓▓▓▓ \▓▓  \▓▓  \▓▓ ▓▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓   \▓▓▓▓  \▓▓▓▓▓▓▓ \▓▓▓▓▓▓▓
+                                                                                                                                                                                                                                 | ▓▓                                             
+                                                                                                                                                                                                                                 | ▓▓                                             
+                                                                                                                                                                                                                                  \▓▓                                             
+                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+ "
+ setterm -foreground green -store
+ echo "type ./beer-cat.sh to boot"
 
             ;;
-        "LINUX")
-              #!bin/bash
 
- setterm -foreground yellow -store
- echo -e "installing packages..."
- setterm -foreground white -store
- echo "if this question appears [y / n] type y and enter"
- sleep 8
-# installing apts
- setterm -foreground yellow -store
-apt install util-linux -y
-apt install figlet -y
-  apt install git -y
-apt install python -y
-apt install python2 -y
-sleep 7
- setterm -foreground white -store
- apt-get install figlet -y
-   apt-get install git -y
-apt-get install util-linux -y
- apt-get install python -y
-apt-get install python2 -y
-sleep 6
-setterm -foreground yellow -store
-sudo apt install figlet -y
-  sudo apt install git -y
-sudo apt install python -y
-sudo apt install python2 -y
-sudo apt install util-linux -y
-echo -e "successfully installed"
-chmod +x *
-bash beer-cat.sh
-break
-            
-            ;;
         "Quit")
             break
             ;;
