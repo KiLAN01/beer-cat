@@ -32,7 +32,7 @@ pkg install git
 pip install lolcat
 } 1>/dev/null 
  clear
- setterm -foreground Gray -store
+ setterm -foreground gray-store
  echo "
            ╔╗      ╔╗ ╔╗       ╔╗                               ╔╗      ╔╗       ╔╗
           ╔╝╚╗     ║║ ║║      ╔╝╚╗                              ║║     ╔╝╚╗      ║║
