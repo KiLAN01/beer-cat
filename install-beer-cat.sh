@@ -1,8 +1,16 @@
 #!/bin/bash
 apt install util-linux 1>/dev/null  
 setterm -foreground red -store
-# installing apts
-sleep 2
+echo "
+ ▄▄· ▄▄▄  ▄▄▄ .·▄▄▄▄  ▪  ▄▄▄▄▄.▄▄ · 
+▐█ ▌▪▀▄ █·▀▄.▀·██▪ ██ ██ •██  ▐█ ▀. 
+██ ▄▄▐▀▀▄ ▐▀▀▪▄▐█· ▐█▌▐█· ▐█.▪▄▀▀▀█▄
+▐███▌▐█•█▌▐█▄▄▌██. ██ ▐█▌ ▐█▌·▐█▄▪▐█
+·▀▀▀ .▀  ▀ ▀▀▀ ▀▀▀▀▀• ▀▀▀ ▀▀▀  ▀▀▀▀ 
+"
+echo "developer channel: https://www.youtube.com/channel/UCaVBnB4CQxiW6-Nuhmi1gqA" | lolcat
+echo "colaborador: Lealzim STK" | lolcat
+sleep 3
 clear
 echo "
 ░░     ░░ ░░░░░░░ ░░       ░░░░░░  ░░░░░░  ░░░    ░░░ ░░░░░░░     ░░░░░░░░  ░░░░░░      ░░ ░░░    ░░ ░░░░░░░ ░░░░░░░░  ░░░░░  ░░      ░░      
@@ -24,6 +32,7 @@ pkg install git
 pip install lolcat
 } 1>/dev/null 
  clear
+ setterm -foreground Gray -store
  echo "
            ╔╗      ╔╗ ╔╗       ╔╗                               ╔╗      ╔╗       ╔╗
           ╔╝╚╗     ║║ ║║      ╔╝╚╗                              ║║     ╔╝╚╗      ║║
