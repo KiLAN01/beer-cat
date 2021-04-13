@@ -1,18 +1,9 @@
 #!/bin/bash
-apt install -y util-linux 1>/dev/null  
+apt install util-linux 1>/dev/null  
 setterm -foreground red -store
-echo "[+]~installing necessary packages~[+]"
 # installing apts
-{
-sleep 7
-#installing pkgs
-pkg install python -y
-pkg install python2 -y
-pkg install figlet -y
-pkg install git -y
-pkg install git
-pip install lolcat
-} 1>/dev/null 
+sleep 2
+clear
 echo "
 ░░     ░░ ░░░░░░░ ░░       ░░░░░░  ░░░░░░  ░░░    ░░░ ░░░░░░░     ░░░░░░░░  ░░░░░░      ░░ ░░░    ░░ ░░░░░░░ ░░░░░░░░  ░░░░░  ░░      ░░      
 ▒▒     ▒▒ ▒▒      ▒▒      ▒▒      ▒▒    ▒▒ ▒▒▒▒  ▒▒▒▒ ▒▒             ▒▒    ▒▒    ▒▒     ▒▒ ▒▒▒▒   ▒▒ ▒▒         ▒▒    ▒▒   ▒▒ ▒▒      ▒▒      
@@ -22,24 +13,16 @@ echo "
 
 "
 setterm -foreground blue -store
-sleep 4
-PS3='do you wish to continue? '
-options=("yes" "Quit")
-select opt in "${options[@]}"
-do
-    case $opt in
-        "yes")
-   
-            ;;
-
-        "Quit")
-            break
-            ;;
-        *) echo "invalid option $REPLY";;
-    esac
-done
-
-            #!bin/bash
+echo "[+]~installing~[+]"
+       {
+#installing pkgs
+pkg install python -y
+pkg install python2 -y
+pkg install figlet -y
+pkg install git -y
+pkg install git
+pip install lolcat
+} 1>/dev/null 
  clear
  echo "
            ╔╗      ╔╗ ╔╗       ╔╗                               ╔╗      ╔╗       ╔╗
@@ -55,3 +38,4 @@ done
  setterm -foreground green -store
  echo "type ./beer-cat.sh to boot"
 
+exit
