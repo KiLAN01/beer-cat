@@ -19,8 +19,8 @@ echo "
 ▓▓ ▓▓▓ ▓▓ ▓▓      ▓▓      ▓▓      ▓▓    ▓▓ ▓▓  ▓▓  ▓▓ ▓▓             ▓▓    ▓▓    ▓▓     ▓▓ ▓▓  ▓▓ ▓▓      ▓▓    ▓▓    ▓▓   ▓▓ ▓▓      ▓▓      
  ███ ███  ███████ ███████  ██████  ██████  ██      ██ ███████        ██     ██████      ██ ██   ████ ███████    ██    ██   ██ ███████ ███████ 
 
-"
-setterm -foreground blue -store
+" | lolcat
+setterm -foreground cyan -store
 echo "[+]~installing~[+]"
        {
 #installing pkgs
