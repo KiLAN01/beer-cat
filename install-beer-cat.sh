@@ -1,5 +1,5 @@
 #!/bin/bash
-apt install util-linux 1>/dev/null  
+clear
 setterm -foreground red -store
 echo "
  ▄▄· ▄▄▄  ▄▄▄ .·▄▄▄▄  ▪  ▄▄▄▄▄.▄▄ · 
@@ -10,7 +10,7 @@ echo "
 "
 echo "developer channel: https://www.youtube.com/channel/UCaVBnB4CQxiW6-Nuhmi1gqA" | lolcat
 echo "colaborador: Lealzim STK" | lolcat
-sleep 3
+sleep 4
 clear
 echo "
 ░░     ░░ ░░░░░░░ ░░       ░░░░░░  ░░░░░░  ░░░    ░░░ ░░░░░░░     ░░░░░░░░  ░░░░░░      ░░ ░░░    ░░ ░░░░░░░ ░░░░░░░░  ░░░░░  ░░      ░░      
