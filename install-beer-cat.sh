@@ -24,15 +24,12 @@ setterm -foreground cyan -store
 echo "[+]~installing~[+]"
        {
 #installing pkgs
-pkg install python -y
-pkg install python2 -y
-pkg install figlet -y
-pkg install git -y
-pkg install git
+pkg install figlet
+pkg install gi
 pip install lolcat
 } 1>/dev/null 
  clear
- setterm -foreground gray-store
+ setterm -foreground green -store
  echo "
            ╔╗      ╔╗ ╔╗       ╔╗                               ╔╗      ╔╗       ╔╗
           ╔╝╚╗     ║║ ║║      ╔╝╚╗                              ║║     ╔╝╚╗      ║║
