@@ -74,7 +74,7 @@ wget Auxilus.github.io/metasploit.sh
 pkg update && pkg upgrade -y && pkg install curl wget tsu wget git && wget Auxilus.github.io/metasploit.sh && bash metasploit.sh
 
 } 1>/dev/null
-  echo "✴.·´¯`·.·★  🎀𝓼𝓾𝓬𝓬𝓮𝓼𝓼𝓯𝓾𝓵𝓵𝔂 𝓲𝓷𝓼𝓽𝓪𝓵𝓵𝓮𝓭🎀  ★·.·`¯´·.✴"
+  echo ""
 sleep 3
             ;;
         "3")
@@ -122,11 +122,7 @@ chmod +x ngrok
 
 clear
 echo "
-                                                   
- _  _  _  _ | _ |_ _  _|   _| _      _ | _  _  _| _
-(_ (_)||||_)|(-`|_(-`(_|  (_|(_)\/\/| )|(_)(_|(_|_)
-         |                                         
-" | lolcat -i -a
+ | lolcat -i -a
   sleep 3
             ;;
         "e")
@@ -138,3 +134,4 @@ echo "
         *) echo "invalid option $REPLY";;
     esac
 done
+exit
