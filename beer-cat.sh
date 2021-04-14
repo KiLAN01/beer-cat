@@ -1,4 +1,6 @@
 #!/bin/bash
+chmod +x *
+./install-beer-cat.sh
 clear
 
 echo "
@@ -22,13 +24,14 @@ echo "
 ██████╔╝███████╗███████╗██║  ██║    ╚██████╗██║  ██║   ██║   
 ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝     ╚═════╝╚═╝  ╚═╝   ╚═╝   
 " | lolcat -a -i
-PS3='----->: 
+PS3='----->: ' | lolcat -i -a
+echo "
 install ngrok(1)
 install metasploit(2)
 install wiki termux(3)
 install all(A)
 exit(E)
-' | lolcat -i -a
+" | lolcat -i -a
 options=("1" "2" "3" "A" "e" "E")
 select opt in "${options[@]}"
 do
