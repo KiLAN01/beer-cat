@@ -14,8 +14,12 @@ sleep 4
 clear
 
 
-PS3='𝕔𝕙𝕠𝕠𝕤𝕖 𝕒 𝕥𝕠𝕠𝕝 𝕥𝕠 𝕚𝕟𝕤𝕥𝕒𝕝𝕝
-1: ' | lolcat
+PS3='𝕔𝕙𝕠𝕠𝕤𝕖 𝕒 𝕥𝕠𝕠𝕝 𝕥𝕠 𝕚𝕟𝕤𝕥𝕒𝕝𝕝:
+install ngrok(1)
+install metasploit(2)
+install wiki termux(3)
+install all(4)
+' | lolcat
 options=("1" "2" "3" "Quit")
 select opt in "${options[@]}"
 do
