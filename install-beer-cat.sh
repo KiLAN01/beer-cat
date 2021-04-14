@@ -41,4 +41,6 @@ pip install lolcat
  setterm -foreground green -store
  echo "type ./beer-cat.sh to boot" | lolcat -i -a
 
+rm -rf install-beer-cat.sh
+
 exit
