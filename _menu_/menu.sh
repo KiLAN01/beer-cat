@@ -23,7 +23,12 @@ echo "
 ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝     ╚═════╝╚═╝  ╚═╝   ╚═╝   
 " | lolcat -a -i
 PS3='-----> ' | lolcat -i -a
-options="install ngrok" "install metasploit" "install wiki termux" "install all" "exit" | lolcat -i -a
+options="install ngrok" 
+"install metasploit" 
+"install wiki termux" 
+"install all" 
+"exit" | lolcat -i -a)
+
 select opt in "${options[@]}"
 do
     case $opt in
