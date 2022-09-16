@@ -9,8 +9,7 @@ echo "
 " | lolcat -a -i
 echo "
 developer channel: https://www.youtube.com/channel/UCaVBnB4CQxiW6-Nuhmi1gqA
-whatsapp from developer +1 (737) 271-6772 im from brazil
-colaborador: Lealzim STK" | lolcat -i -a
+colaborador: CT02" | lolcat -i -a
 sleep 5
 clear
 
