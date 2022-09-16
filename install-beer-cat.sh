@@ -8,7 +8,7 @@ echo "
 ·▀▀▀ .▀  ▀ ▀▀▀ ▀▀▀▀▀• ▀▀▀ ▀▀▀  ▀▀▀▀ 
 " | lolcat -i -a
 echo "developer channel: https://www.youtube.com/channel/UCaVBnB4CQxiW6-Nuhmi1gqA" | lolcat -i -a
-echo "colaborador: Lealzim STK" | lolcat -a
+echo "colaborador: CT02" | lolcat -a
 sleep 4
 clear
 echo "
